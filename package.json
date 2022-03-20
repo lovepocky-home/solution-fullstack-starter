@@ -1,0 +1,24 @@
+{
+  "name": "solution-fullstack-starter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "back:nest:dev": "pnpm run --filter back-nest start:dev -- --preserveWatchOutput",
+    "all:dev": "concurrently 'npm:back:*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovepocky-home/solution-fullstack-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lovepocky-home/solution-fullstack-starter/issues"
+  },
+  "homepage": "https://github.com/lovepocky-home/solution-fullstack-starter#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
