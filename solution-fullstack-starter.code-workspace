@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "./packages/back-nest"
+    },
+    {
+      "path": "./packages/front-ng"
+    },
+  ],
+  "settings": {}
+}
