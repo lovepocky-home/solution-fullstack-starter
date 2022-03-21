@@ -7,7 +7,7 @@
       "path": "./packages/back-nest"
     },
     {
-      "path": "./packages/front-ng"
+      "path": "./packages/ng-workspace"
     },
   ],
   "settings": {}

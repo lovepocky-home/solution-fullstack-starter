@@ -6,7 +6,17 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noImplicitOverride": true,
+    "noImplicitOverride": false,
+    "paths": {
+      "gql-api": [
+        "dist/gql-api/gql-api",
+        "dist/gql-api"
+      ],
+      "gql-client-module": [
+        "dist/gql-client-module/gql-client-module",
+        "dist/gql-client-module"
+      ]
+    },
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

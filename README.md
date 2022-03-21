@@ -6,19 +6,25 @@
 flowchart TB
   libs
 
-  graphql.yml
-
   subgraph Frontend
-    angular
+    subgraph Angular-Workspace
+      angular[angular-graphql-lib]
+      angular-app
+      angular-components -.-> angular-app
+      angular -.-> angular-app
+    end
+    operations.graphql
   end
 
   subgraph Backend
     nestjs
+    others?
   end
   nest-cli -- create graphql resources--> nestjs
-  nestjs -- generate from entities/resolvers --> graphql.yml
+  nestjs -- generate from entities/resolvers --> schema.graphql
 
-  graphql.yml -- generate entities/service --> angular
+  schema.graphql -- generate entities --> angular
+  operations.graphql -- generate services --> angular
 
   libs -.-> nestjs
   libs -.-> angular
@@ -29,3 +35,13 @@ flowchart TB
 
 - pnpm
 - <https://www.graphql-code-generator.com/>
+
+## Develop
+
+```bash
+# install
+pnpm install
+
+# dev
+pnpm all:dev
+```

@@ -1,0 +1,21 @@
+{
+  "name": "gql-api",
+  "version": "0.0.1",
+  "scripts": {
+    "generate": "graphql-codegen"
+  },
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/near-operation-file-preset": "^2.2.9",
+    "@graphql-codegen/typescript": "^2.4.8",
+    "@graphql-codegen/typescript-apollo-angular": "^3.4.6",
+    "@graphql-codegen/typescript-operations": "^2.3.5"
+  }
+}

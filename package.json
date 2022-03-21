@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "front:ng": "pnpm run --filter front-ng start -- --host 0.0.0.0 --hmr",
+    "front:ng": "pnpm run --filter ng-workspace start -- --host 0.0.0.0 --hmr",
     "back:nest:dev": "pnpm run --filter back-nest start:dev -- --preserveWatchOutput",
-    "all:dev": "concurrently 'npm:back:*' 'npm:front:*' ",
+    "lib:gql-ng": "pnpm run --filter gql-ng generate -- -w",
+    "all:dev": "concurrently 'npm:back:*' 'npm:front:*' 'npm:lib:*' ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
